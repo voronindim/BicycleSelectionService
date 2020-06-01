@@ -1,0 +1,11 @@
+<div class="inner_main_container">
+  <div class="inner_main_container_in">
+    <div *ngFor="let bike of Bikes">
+      <app-card [bike]="bike"></app-card>
+    </div>
+    <h2 *ngIf="Bikes.length == 0">По данному запросу нет велосипедов!</h2>
+  </div>
+  <div class="butter_inner_main">
+    <button routerLink="/add-info">Добавить карточку</button>
+  </div>
+</div>

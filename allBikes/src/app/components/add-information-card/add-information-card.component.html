@@ -1,0 +1,72 @@
+<div class="add_information_container">
+  <div class="add_information">
+    <div class="add_title">
+      <h2>Добавление Велосипеда</h2>
+    </div>
+    <form [formGroup]="form" class="add_info_card">
+      <div class="left_column">
+
+        <div class="name_bike title_name">
+          <label for="name">Название</label>
+        </div>
+        <div class="input_name">
+          <input type="text" id="name" formControlName="Name" placeholder="Введите название..">
+        </div>
+
+        <div class="title_name">
+          <label for="specialization">Специализация</label>
+        </div>
+        <div class="input_name">
+          <select type="text" id="specialization" formControlName="SpecificationId" placeholder="Введите специализацию..">
+            <option *ngFor="let item of specifications" value="{{item.id}}">{{item.name}}</option>
+          </select>
+        </div>
+
+        <div class="title_name">
+          <label for="speed">Максимальная скорость</label>
+        </div>
+        <div class="input_name">
+          <input type="text" id="speed" formControlName="MaxSpeed" placeholder="Введите скорость..">
+        </div>
+
+        <div class="title_name">
+          <label for="weight">Масса велосипеда</label>
+        </div>
+        <div class="input_name">
+          <input type="text" id="weight" formControlName="Weight" placeholder="Введите массу..">
+        </div>
+
+        <div class="title_name">
+          <label for="radius">Радиус колес</label>
+        </div>
+        <div class="input_name">
+          <input type="text" id="radius" formControlName="Radius" placeholder="Введите радиус колеса..">
+        </div>
+
+        <div class="title_name">
+          <label for="height">Высота велосипеда</label>
+        </div>
+        <div class="input_name">
+          <input type="text" id="height" formControlName="Height" placeholder="Введите высоту..">
+        </div>
+
+      </div>
+      <div class="right_column">
+        <div class="title_name">
+          <label for="textarea">Описание</label>
+        </div>
+        <div class="textarea_place">
+          <textarea  id="textarea" formControlName="Text" placeholder="Описание велисипеда.."></textarea>
+        </div>
+        <div class="submit">
+          <div class="add_button">
+            <button [disabled]="this.form.invalid" (click)="onClick() ">Добавить информацию</button>
+          </div>
+          <div class="add_img">
+            <input type="file" hidden="true" id="file_selector">
+            <button (click)="onPickImage()">+</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>

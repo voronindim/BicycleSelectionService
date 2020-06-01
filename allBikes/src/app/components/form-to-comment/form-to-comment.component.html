@@ -1,0 +1,26 @@
+<div class="add_container">
+  <div class="title">
+    <h3>Ваш отзыв</h3>
+  </div>
+  <div class="form">
+    <div class="form_title">
+      <div class="form_title_name">
+        <label for="name">Имя</label>
+      </div>
+      <div class="form_input_name">
+        <input [(ngModel)]="name" id="name" placeholder="Введите имя..">
+      </div>
+    </div>
+    <div class="form_text">
+      <div class="form_title_text">
+        <label for="think">Мнение</label>
+      </div>
+      <div class="form_input_text">
+        <textarea [(ngModel)]="text" id="think" placeholder="Отзыв.."></textarea>
+      </div>
+    </div>
+    <div class="leave_comment">
+      <button (click)="onAdd()">Оставить отзыв</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //font-family: 'Roboto', sans-serif;
+}
+html
+{
+}
+
+ul
+{
+  list-style: none;
+}
+
+a
+{
+  text-decoration: none;
+  &:hover
+  {
+    color: #666666;
+  }
+}
+
+input
+{
+  outline: none;
+}
+textarea
+{
+  outline: none;
+}
+
+

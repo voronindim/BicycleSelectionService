@@ -1,0 +1,46 @@
+.card
+{
+  display: block;
+  border: 1px dashed #666666;
+  width: 320px;
+  height: 400px;
+  margin: 2rem;
+}
+
+.card_container
+{
+  padding: 20px;
+}
+
+.card_container img
+{
+  border: black;
+  width: 274px;
+  height: 160px;
+}
+.info
+{
+  color: #333333;
+  //padding: 2px;
+}
+.info h3
+{
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 20px 10px;
+}
+.link a
+{
+  display: flex;
+  flex-grow: 1;
+  border: 1px solid #101010;
+  color: #101010;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.link a:last-child
+{
+  padding-right: 0;
+  margin-bottom: 0;
+}

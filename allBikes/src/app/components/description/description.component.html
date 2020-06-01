@@ -1,0 +1,23 @@
+<div class="description_container">
+  <h2>{{bike?.name}}</h2>
+  <div class="description_characteristic">
+    <div class="img_description">
+      <img [src]="image + bike?.attachment">
+    </div>
+    <div class="characteristic">
+      <ul>
+        <li>Спецификация: {{bike?.specification}}</li>
+        <li>Вес: {{bike?.weight}}</li>
+        <li>Максимальная скорость: {{bike?.maxSpeed}}</li>
+        <li>Грузоподъемность: {{bike?.carCapacity}}</li>
+        <li>Радиус колес: {{bike?.radius}}</li>
+        <li>Высота: {{bike?.height}}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="description">
+    <p>{{bike?.text}}</p>
+  </div>
+  <app-comments [bikeId]="bikeId"></app-comments>
+</div>
+

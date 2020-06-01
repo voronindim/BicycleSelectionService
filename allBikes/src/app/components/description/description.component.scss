@@ -1,0 +1,66 @@
+.description_container
+{
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  .description_characteristic
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    width: 75%;
+  }
+  .characteristic
+  {
+    padding: 5rem;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    li
+    {
+      padding: 10px;
+    }
+  }
+  .img_description
+  {
+    width: 45%;
+    height: auto;
+    border: 1px solid #ffffff;
+    padding-bottom: 5rem;
+    img
+    {
+      display: flex;
+      width: 100%;
+      height: auto;
+    }
+  }
+  h2
+  {
+    margin: 3rem;
+  }
+  .description
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 3rem;
+    p
+    {
+      line-height: 1.5;
+    }
+  }
+}
+
+app-comments
+{
+  display: flex;
+  justify-content: center;
+
+  width: 80%;
+}

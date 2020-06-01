@@ -1,0 +1,56 @@
+<div class="search_container">
+  <div class="title">
+    <h2>Найдем</h2>
+    <h2>Нужное</h2>
+  </div>
+  <div class="form_search_container">
+    <div class="left_column">
+      <div class="title_name">
+        <label for="weight">Масса велосипеда</label>
+      </div>
+      <div class="input_name">
+        <input [(ngModel)]="weight" type="text" id="weight" placeholder="Введите массу..">
+      </div>
+
+      <div class="title_name">
+        <label for="radius">Радиус колес</label>
+      </div>
+      <div class="input_name">
+        <input [(ngModel)]="radius" type="text" id="radius" placeholder="Введите радиус колеса..">
+      </div>
+
+      <div class="title_name">
+        <label for="height">Высота велосипеда</label>
+      </div>
+      <div class="input_name">
+        <input [(ngModel)]="height" type="text" id="height" placeholder="Введите высоту..">
+      </div>
+
+    </div>
+    <div class="right_column">
+      <div class="name_bike title_name">
+        <label for="name">Название велосипеда</label>
+      </div>
+      <div class="input_name">
+        <input [(ngModel)]="name" type="text" id="name" placeholder="Введите название..">
+      </div>
+
+      <div class="title_name">
+        <label for="specialization">Грузоподъемность</label>
+      </div>
+      <div class="input_name">
+        <input [(ngModel)]="capacity" type="text" id="specialization" placeholder="Введите грузоподъемность..">
+      </div>
+
+      <div class="title_name">
+        <label for="speed">Максимальная скорость</label>
+      </div>
+      <div class="input_name">
+        <input [(ngModel)]="speed" type="text" id="speed" placeholder="Введите скорость..">
+      </div>
+    </div>
+  </div>
+  <div class="search_button">
+    <button routerLink="/listCard" (click)="onClick() ">Найти</button>
+  </div>
+</div>
