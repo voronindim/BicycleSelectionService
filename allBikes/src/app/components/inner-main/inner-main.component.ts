@@ -13,7 +13,6 @@ export class InnerMainComponent implements OnInit {
   constructor(private BikeService: BikeServiceService) {
     this.BikeService.bikes.subscribe(data => {
       this.Bikes = data;
-      console.log(this.Bikes)
     });
   }
 
